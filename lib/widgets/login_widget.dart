@@ -1,9 +1,11 @@
 import 'package:fl_country_code_picker/fl_country_code_picker.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:wabebe/screens/otp_verification_screen.dart';
 import 'package:wabebe/widgets/text_widget.dart';
 
-Widget loginWidget(CountryCode countryCode, Function onCountryChanged) {
+Widget loginWidget(CountryCode countryCode, Function onCountryChanged, Function onSubmit) {
   return Padding(
     padding: const EdgeInsets.symmetric(horizontal: 20.0),
     child: Column(
@@ -71,11 +73,13 @@ Widget loginWidget(CountryCode countryCode, Function onCountryChanged) {
               child: Container(
                 padding: const EdgeInsets.symmetric(horizontal: 10),
                 child: TextField(
+                  onSubmitted: (String? input) => onSubmit(input),
                   decoration: InputDecoration(
                     hintText: "Enter phone number",
                     hintStyle: GoogleFonts.poppins(fontSize: 12, fontWeight: FontWeight.normal),
                     border: InputBorder.none,
                   ),
+                  keyboardType: TextInputType.number,
                 ),
               ),
             ),
