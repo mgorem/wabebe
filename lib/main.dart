@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           textTheme: GoogleFonts.poppinsTextTheme(textTheme),
         ),
-        home: const LoginScreen(),
+        home: const ProfileSettingScreen(),
         debugShowCheckedModeBanner: false,
       );
     }

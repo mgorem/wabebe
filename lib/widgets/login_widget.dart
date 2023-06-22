@@ -12,7 +12,7 @@ Widget loginWidget(CountryCode countryCode, Function onCountryChanged, Function 
       crossAxisAlignment: CrossAxisAlignment.start,
     children: [
       textWidget(text: "Hello, nice to meet you."),
-      textWidget(text: "Get going with green taxi.", fontSize: 22, fontWeight: FontWeight.bold),
+      textWidget(text: "Get going with wabebe.", fontSize: 22, fontWeight: FontWeight.bold),
 
       const SizedBox(
         height: 40,

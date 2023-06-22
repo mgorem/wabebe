@@ -16,7 +16,7 @@ class OtpVerificationScreen extends StatefulWidget {
 class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
 
 
-  AuthController authController = Get.find<AuthController>();
+  AuthController authController = Get.put(AuthController());
 
   @override
   void initState() {

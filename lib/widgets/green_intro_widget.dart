@@ -20,7 +20,7 @@ Widget greenIntroWidget() {
 
         const SizedBox(height: 10,),
 
-        SvgPicture.asset("assets/greenTaxi.svg"),
+        Text("WABEBE", style: TextStyle(color: Colors.white, fontSize: 60, fontWeight: FontWeight.bold),),
       ],
     ),
   );

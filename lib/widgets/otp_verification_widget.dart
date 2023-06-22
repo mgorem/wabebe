@@ -33,7 +33,7 @@ Widget otpVerificationWidget() {
                   text: "Resend code in" + " ",
                 ),
                 TextSpan(
-                  text: "10 seconds",
+                  text: "60 seconds",
                   style: GoogleFonts.poppins(fontWeight: FontWeight.bold),
                 ),
               ],
